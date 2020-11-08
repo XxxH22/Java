@@ -24,7 +24,7 @@
 3.自定义异常类Aexception，以便在Test类中能使用户输入正确的姓名。
 4.设计Test类
 (1) 用static final定义修饰个人所得税系数z1，z2
-(2) 建立博士研究生类数组x[2]
+(2) 建立博士研究生类数组
 (3) 利用for循环初始化数组中每个元素
 (4) 利用Scanner类变量，set函数，完成对博士研究生类中的各个元素进行赋值 
 (5) 利用try……catch语句，来捕获对博士研究生类赋值过程中的异常，并利用while(true)死循环来设定，只有用户正确输入后，程序才会往下运行。
@@ -35,6 +35,8 @@
 5.程序结束
 
 五、核心代码
+
+DoctoralCandidate.java：
 
 class DoctoralCandidate implements StudentManager, TeacherManager {
     private String name;
@@ -103,7 +105,7 @@ class DoctoralCandidate implements StudentManager, TeacherManager {
 六、运行截图
 ![image](https://github.com/XxxH22/Java/blob/main/%E8%BF%90%E8%A1%8C%E6%88%AA%E5%9B%BE.png)
 
-
-
-
-
+六、实验感想
+通过这次实验，我了解到定义接口时要使用关键字interface来声明自己是一个接口。接口体中所有的常量的访问权限一定都是public，而且是static常量，且所有的抽象方法的访问权限一定都是public。
+我还了解到在程序运行时可能出现一些错误，异常处理将会改变程序的控制流程，让程序有机会对错误做出处理。在Java中使用throw关键字抛出一个Exception子类的实例表示异常发生，使用try-catch语句来处理异常。
+我还学会了在实例化类时，可采用运行时通过main方法的参数args一次性赋值，也可采用Scanner类实现运行时交互式输入。
